@@ -1,4 +1,4 @@
-const sentence = "hello there from lighthouse labs";
+const sentence = "hello there from lighthouse labs\n";
 let delay = 0;
 let counter = 0;
 for (const char of sentence) {
@@ -7,9 +7,6 @@ for (const char of sentence) {
   setTimeout(function() {
     process.stdout.write(char);
   }, 1000 + delay)
-  if (counter === sentence.length) {
-    process.stdout.write("\n");
-  }
   
 }
 
